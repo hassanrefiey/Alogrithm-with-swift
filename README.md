@@ -1,5 +1,5 @@
 # Alogrithm-with-swift
-Sort algorithm With Swift 
+1-Selection Sort algorithm With Swift 
 
 Goal: To sort an array from low to high (or high to low). Complexity O(N^2) 
 
