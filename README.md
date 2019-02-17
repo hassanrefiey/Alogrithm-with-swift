@@ -34,3 +34,35 @@ Iteration number 5: [1, 2, 2, 3, 4, 6, 5]
 Iteration number 6: [1, 2, 2, 3, 4, 5, 6]
 /////
 code:
+
+
+
+import UIKit
+
+var arr = [4,2,6,3,5,2,1]
+
+for x in 0..<arr.count-1
+
+{
+
+    var min:Int = arr[x]// for store the minimum number
+    for y in x+1..<arr.count
+    
+    {
+    
+        if (min < arr[y])
+        {
+            arr[x] = min
+            
+        }
+        
+        else
+        {
+            arr[x] = arr[y]
+            arr[y] = min
+            min = arr[x]
+        }
+        
+    }
+}
+print("Final result \(arr)")
